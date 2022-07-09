@@ -21,6 +21,7 @@
 			color: #f5f5f5;
 			text-align: center;
 			line-height: 50px;
+			
 		}
 
 		.form {
@@ -93,6 +94,18 @@
 			width: 48%;
 			height: 40px;
 		}
+		.videourls{
+			font-size:22px;
+			font-weight:300;
+		}
+		.videourls  span{
+			font-size:22px;
+			font-weight:300;
+			color:red;
+		}
+	
+		
+
 
 		.video-data .controls button {
 			border: 1px solid #888;
@@ -100,9 +113,23 @@
 			background: transparent;
 			cursor: pointer;
 		}
+		.boder{
+			border-radius:50px;
+
+
+			
+		}
+		.video__url{
+			border-radius:10px;
+			 
+		}
+		.video__urls{
+			border-radius:7px;
+			 
+		}
 	</style>
 	<!-- <link rel="icon" type="image/png" href="/favicon.png"/> -->
-	<link rel="icon" type="image/png" href="icons8-video-24.png"/>
+	<link  class="boder" rel="icon" type="image/png" href="icons8-video-s24.png"/>
 </head>
 
 <body>
@@ -111,11 +138,11 @@
 	</div>
 	<div class="form">
 		<div class="form-element">
-			<label for="videoURL">Enter Youtube Video Link</label>
-			<input type="text" id="videoURL">
+			<label class="videourls" for="videoURL"> Enter <span>Youtube </span>   Video Link</label>
+			<input class="video__url" type="text" id="videoURL" placeholder="Paste video Url">
 		</div>
 		<div class="form-element">
-			<button id="get-video-info-btn">Download</button>
+			<button class="video__urls"  id="get-video-info-btn">Download</button>
 		</div>
 	</div>
 	<div class="video-data">
